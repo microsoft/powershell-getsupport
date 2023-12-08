@@ -186,7 +186,7 @@ function Resolve-ExportPath {
 	}
 
 	if (-not $parentPath) {
-		$newPath = Show-SaveFileDialog -Filename $fileName -Filter '*.zip'
+		$newPath = Show-SaveFileDialog -Filename $fileName -Filter 'Zip Archive (*.zip)|*.zip'
 		if (-not $newPath) {
 			throw "Export Path not resolvable!"
 		}
