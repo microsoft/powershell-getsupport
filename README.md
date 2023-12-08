@@ -18,7 +18,7 @@ While we go into more details further down in this readme, odds are you are just
 For when you want one debug dump for an export to look at. Contains the most information, but requires file transfer.
 
 ```powershell
-Invoke-Expression (Invoke-WebRequest -Uri '<inserturi>' -UseBasicParsing)
+Invoke-Expression (Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/microsoft/powershell-getsupport/main/support-package.ps1' -UseBasicParsing)
 ```
 
 > Support Data
@@ -26,7 +26,7 @@ Invoke-Expression (Invoke-WebRequest -Uri '<inserturi>' -UseBasicParsing)
 Provides a comprehensive debug summary as a text file. Less information than the support package, but can be used without sending files.
 
 ```powershell
-Invoke-Expression (Invoke-WebRequest -Uri '<inserturi>' -UseBasicParsing)
+Invoke-Expression (Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/microsoft/powershell-getsupport/main/support-message.ps1' -UseBasicParsing)
 ```
 
 ## Do a clean run
@@ -52,7 +52,7 @@ If it happens on many but not all machines, what do they have in common?
 
 Clarifying this information - which a debug dump cannot collect for you - is really helpful both with prioritizing an issue but also with where to start looking for the issue.
 
-> Runtime Environment
+> Runtime Environment (include in the scripts above)
 
 + PS Version
 + Operating System
@@ -63,6 +63,6 @@ Clarifying this information - which a debug dump cannot collect for you - is rea
 
 > What happened?
 
-+ Command History
++ Command History (include in the scripts above)
 + Code executed
-+ Error data
++ Error data (include in the scripts above)
