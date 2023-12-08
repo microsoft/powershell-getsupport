@@ -9,6 +9,11 @@ To receive formal, official support in a PowerShell matter, either open a case w
 
 Anything you see below can help you provide better information, but this project is not the place to open issues for any problems you have.
 
+## Community Support
+
+There are plenty of options to get help from the public community.
+[Find them listed here.](https://learn.microsoft.com/en-us/powershell/scripting/community/community-support)
+
 ## Information Collection Scripts
 
 While we go into more details further down in this readme, odds are you are just here to run that support data gathering script, so here you go:
