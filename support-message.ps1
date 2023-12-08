@@ -91,7 +91,7 @@ function Start-FileWriter {
 
 	Stop-FileWriter
 	$command = { Set-Content -Path $Path }.GetSteppablePipeline()
-	$command.Begin()
+	$command.Begin($true)
 	$script:_FileWriter = $command
 }
 function Stop-FileWriter {
