@@ -249,7 +249,7 @@ function Write-ErrorText {
 		
 	)
 
-	$header = @'
+	Write-File -Content @'
 ################################################################################
 Errors:
 
@@ -258,7 +258,7 @@ Errors:
 		Get-Error | Write-File
 	}
 	else {
-		$error | Format-List -Force | Out-String | Write-File
+		$error | Format-List * -Force | Out-String | Write-File
 	}
 
 	Write-File -Content ''
