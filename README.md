@@ -26,7 +26,6 @@ Invoke-Expression ([System.Net.WebClient]::new()).DownloadString('https://raw.gi
 Provides a comprehensive debug summary as a text file. Less information than the support package, but can be used without sending files.
 
 ```powershell
-# Not implemented yet
 Invoke-Expression ([System.Net.WebClient]::new()).DownloadString('https://raw.githubusercontent.com/microsoft/powershell-getsupport/main/support-message.ps1')
 ```
 
